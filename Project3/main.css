@@ -1,0 +1,87 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: black;
+    background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/ezgif-106a827a7171a4.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/pipeborder.png) 30 round;
+}
+
+.carousel {
+    margin: 0%;
+    padding: 20px 0;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex: 0 0 100%;
+  }
+
+  .group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    animation: scrolling 30s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .card {
+    width: 25em;
+    height: 25em;
+    color: white;
+    font-size: xx-large;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    border-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/pipeborder.png) 30 round;
+
+    &:nth-child(1) {
+      background-position: center;
+      background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/PanelDiscussionItalianPharma-Hero.png);
+    }
+
+    &:nth-child(2) {
+      background-position: center;
+      background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/f3609c_0a3a66892e6c4938898802f1268056fc~mv2.png);
+    }
+
+    &:nth-child(3) {
+      background-position: center;
+      background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Process-Piping-1024x768.png);
+    }
+
+    &:nth-child(4) {
+      background-position: center;
+        background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Pipe-network.png);
+      }
+  
+      &:nth-child(5) {
+        background-position: center;
+        background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Piping-network.png);
+      }
+  
+      &:nth-child(6) {
+        background-position: center;
+        background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Pipe-Network-2048x1451.png);
+      }
+
+      &:nth-child(7) {
+        background-position: center;
+        background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Process-Piping-scaled-e1606830434881-1024x673.png);
+      }
+  
+      &:nth-child(8) {
+        background-position: center;
+        background-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/Pumps_and_Process_Piping2_rand_eYFh4OXwHM.png);
+      }
+  }
