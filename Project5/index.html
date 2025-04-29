@@ -1,0 +1,72 @@
+<!doctype html>
+<hmtl>
+    <head>
+        <title>TOMORROW FT. YESTERDAY</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a href="index.html"></a>
+          </div>
+        
+    <h1>TOMORROW FT. YESTERDAY: WEB EDITION</h1>
+    <h2> Your favorite and only known magazine about previous ideas about the future has hit the world wide web! Currently serving as a repository for the three issues in my capstone project.</h2>
+    <h2> Did you know the internet began as a US military telecom network called ARPANET, supposedly to create communications which could survive nuclear war? Learn more future facts down below...</h2>
+      
+      <div class="slideshow-container">
+        <img class="mySlides" src="magaxinespace.png">
+        <img class="mySlides" src="magaxinehorse.png">
+        <img class="mySlides" src="magaxineMechCrop.png">
+        
+      
+        <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="next" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+<div class="flex-container">
+    <div>
+     <a href="spacepage.html">
+        <img src="orionthumbnail.png">
+        <p></p>
+        <l3>SPACE</l3>
+    </a>
+    </div>
+    <div>
+        <a href="horsepage.html">
+            <img src="thumbnailhorse.png">
+            <p></p>
+            <l3>HORSEMEN</l3>
+        </a>
+    </div>
+    <div>
+        <a href="mechpage.html">
+            <img src="mechthumbnail.png">
+            <p></p>
+            <l3>MECHA</l3>
+        </a>
+    </div>  
+  </div>
+
+      </body>
+</hmtl>  

@@ -43,7 +43,7 @@ body {
     padding: 0px;
     justify-content: center;
     align-items: center;
-    border-image: url(/Users/y324/Documents/GitHub/something-like-homepage/Project3/pipeborder.png) 30 round;
+    border-image: url(pipeborder.png) 30 round;
 
     &:nth-child(1) {
       background-position: center;

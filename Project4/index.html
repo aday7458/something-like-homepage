@@ -1,0 +1,110 @@
+<!doctype html>
+<hmtl>
+    <head>
+        <title>-</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <div class="navbar">
+        <a href="#home">BUY! THIS! PRODUCT!</a>
+        <span class="close">&times;</span>
+      </div>
+
+    <ul>
+        <li>YOU WON'T BELIEVE WHAT THIS CELEBRITY DID<span class="close">&times;</span></li>
+        <li>SAVE BIG ON THESE USELESS PRODUCTS<span class="close">&times;</span></li>
+        <li>SNAKE OIL CHANGED MY LIFE<span class="close">&times;</span></li>
+        <li>THIS INGREDIENT SECRET TO STAYING YOUNG<span class="close">&times;</span></li>
+        <li>TAKE THIS QUIZ AND LEARN NOTHING ABOUT YOURSELF<span class="close">&times;</span></li>
+        <li>WIN 0 DOLLARS AND GET SCAMMED ON THIS LINK<span class="close">&times;</span></li>
+        <li>HOT ADVERTISEMENTS IN YOUR AREA<span class="close">&times;</span></li>
+        <li>SECOND COMING OF JESUS UPON US! REPENT BY SPENDING MONEY TO THE CHURCH<span class="close">&times;</span></li>
+        <li>NEWEST AI MODEL USES EVEN MORE ENERGY<span class="close">&times;</span></li>
+        <li>ANOTHER WEBSITE BOUGHT UP BY BIG CONGLOMERATE<span class="close">&times;</span></li>
+        <li>NEWEST SUPERHERO MOVIE WORKS CGI TEAM HARDER, LOOKS WORSE<span class="close">&times;</span></li>
+        <li>LIKE THIS VIDEO TO DIE INSTANTLY<span class="close">&times;</span></li>
+      </ul>
+
+
+      <body>
+        <div id="div3" class="draggable">FACTS: BEING AS ANNOYING AS POSSIBLE INCREASES AD REVENUE
+           <span class="close">&times;</span>
+        </div>
+       <div id="div3" class="draggable">HUGE VIDEO TAKING UP YOUR SCREEN
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">PROPAGANDA MAN 2025: MAKE ADVERTISEMENTS GREAT AGAIN
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">ELUSIVE "FISH MAN" SPOTTED IN DETROIT
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">INTERNSHIP OPPORTUNITY: 11 HOUR WORKDAY, HALF MINIMUM WAGE
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">LEARN THE MYSTICAL ART OF "BOMBO GENESIS"
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">HOW TO DESIGN AN ENTIRE WEBSITE IN 2 HOURS
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">PYRAMID INC. GET RICH QUICK WITH THIS SCHEME
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">HUGE EXPLOSION SOMEWHERE IN NEVADA, KILLS FIVE, WATCH IT HERE
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">LIVE ACTION REBOOT OF THE FRANCHISE YOU KNOW
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">LET'S GO GAMBLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">SELF HELP BOOK: WORSHIP BILLIONAIRES AS YOUR NEW GODS
+        <span class="close">&times;</span>
+       </div>
+       <div id="div3" class="draggable">HIT NOVEL "THE ILLUSION OF CONTROL AND THE CLOSE BUTTON"
+        <span class="close">&times;</span>
+       </div>
+
+    <script>
+
+        const dragElements = document.querySelectorAll(".draggable"); 
+
+        function onMouseDrag(event, element) {
+            let leftValue = parseInt(window.getComputedStyle(element).left);
+            let topValue = parseInt(window.getComputedStyle(element).top);
+            element.style.left = `${leftValue + event.movementX}px`;
+            element.style.top = `${topValue + event.movementY}px`;
+        }
+
+        dragElements.forEach((element) => {
+            element.addEventListener("mousedown", (e) => {
+                const onMove = (event) => onMouseDrag(event, element); 
+
+                document.addEventListener("mousemove", onMove);
+                document.addEventListener("mouseup", () => {
+                    document.removeEventListener("mousemove", onMove);
+                }, { once: true });
+            });
+        });
+
+        function closePopup() {
+document.getElementById('draggable').style.display = 'none';
+}
+
+function openPopup() {
+document.getElementById('draggable').style.display = 'block';
+}
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+ </script>
+
+    </body>
+</hmtl>
