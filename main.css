@@ -1,0 +1,10 @@
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+    max-width: 50%;
+}
