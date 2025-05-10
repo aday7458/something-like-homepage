@@ -1,6 +1,6 @@
 .draggable {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     margin: 10px;
     background-color: white;
     position: absolute;
@@ -8,7 +8,7 @@
     padding: 10px;
     top:20px;
     border: 1px solid #333;
-    font-size: xx-large;
+    font-size: 100px;
     font-family:sans-serif;
 }
 
